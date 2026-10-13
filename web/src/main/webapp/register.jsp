@@ -23,7 +23,7 @@
                 <form method="post" action="${ctx}/register">
                     <div class="mb-3">
                         <label class="form-label small fw-semibold">Full Name</label>
-                        <input type="text" name="name" class="form-control" placeholder="e.g. Ayush Yash" value="<c:out value='${name}'/>" required autofocus>
+                        <input type="text" name="name" class="form-control" placeholder="e.g. Aditya Chaurasiya" value="<c:out value='${name}'/>" required autofocus>
                     </div>
 
                     <div class="mb-3">

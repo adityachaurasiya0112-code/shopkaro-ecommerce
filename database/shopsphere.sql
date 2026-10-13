@@ -173,7 +173,7 @@ CREATE TABLE coupon_usage (
 -- Uses fallback-compatible plain/sha256/pbkdf2 values recognized by PasswordUtil
 INSERT INTO users (user_id, name, email, password, mobile, role, status) VALUES
 (1, 'Admin User', 'admin@shopsphere.com', 'admin123', '9876543210', 'ADMIN', 1),
-(2, 'Ayush Yash', 'ayush@shopsphere.com', 'user123', '9123456780', 'CUSTOMER', 1),
+(2, 'Aditya Chaurasiya', 'customer1@shopsphere.com', 'user123', '9123456780', 'CUSTOMER', 1),
 (3, 'RTU Student', 'student@shopsphere.com', 'student123', '9988776655', 'CUSTOMER', 1);
 
 -- Addresses
@@ -218,7 +218,7 @@ INSERT INTO reviews (review_id, user_id, product_id, rating, review_text) VALUES
 (3, 2, 2, 4, 'Crisp display and calling is clear. Great companion for daily fitness tracking.'),
 (4, 3, 8, 5, 'Must-have book for RTU exams! Explains Servlets, JSP and RMI with clear practical diagrams.');
 
--- Pre-seeded Sample Completed Order for Ayush Yash
+-- Pre-seeded Sample Completed Order for Aditya Chaurasiya
 INSERT INTO orders (order_id, user_id, address_id, total_amount, discount, payment_method, payment_status, order_status, created_at) VALUES
 (1001, 2, 1, 2273.15, 200.00, 'UPI', 'PAID', 'DELIVERED', '2026-09-15 14:30:00');
 

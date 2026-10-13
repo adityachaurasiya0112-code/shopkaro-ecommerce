@@ -5,8 +5,8 @@ This document contains test cases covering all functional and security requireme
 | Test ID | Scenario / Feature | Test Input / Action | Expected Result | Verification Status |
 |:---:|---|---|---|:---:|
 | **TC-01** | User Registration | Valid name, unique email, 6+ character password | User account created in `users` table; automatic session login created; redirected to storefront. | **PASSED** |
-| **TC-02** | Duplicate Email Check | Attempt registration using existing email (`ayush@shopsphere.com`) | Validation caught on server; descriptive error message displayed; duplicate row rejected. | **PASSED** |
-| **TC-03** | Valid Customer Login | `ayush@shopsphere.com` / `user123` | PBKDF2 hash matched; session created with role `CUSTOMER`; redirected to `/products`. | **PASSED** |
+| **TC-02** | Duplicate Email Check | Attempt registration using existing email (`customer1@shopsphere.com`) | Validation caught on server; descriptive error message displayed; duplicate row rejected. | **PASSED** |
+| **TC-03** | Valid Customer Login | `customer1@shopsphere.com` / `user123` | PBKDF2 hash matched; session created with role `CUSTOMER`; redirected to `/products`. | **PASSED** |
 | **TC-04** | Invalid Login Handling | Wrong password entered | Login rejected; error alert shown; password never reflected back. | **PASSED** |
 | **TC-05** | Authentication Filter | Access `/cart` or `/orders` directly in incognito window | Request intercepted by `AuthenticationFilter`; redirected to `/login` with return URL. | **PASSED** |
 | **TC-06** | Product Catalog Search | Enter keyword "Earbuds" in navbar search bar | Filtered products query executed via `PreparedStatement`; matching Boat earbuds returned. | **PASSED** |

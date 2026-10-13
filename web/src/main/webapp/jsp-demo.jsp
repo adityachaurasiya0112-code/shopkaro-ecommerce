@@ -29,7 +29,7 @@
     demoHitCounter++;
     java.util.Date timestamp = new java.util.Date();
     String student = (String) request.getAttribute("demoStudent");
-    if (student == null) student = "Ayush Yash";
+    if (student == null) student = "Aditya Chaurasiya";
     int sampleValue = 7;
     int calculatedSquare = squareNumber(sampleValue);
 %>

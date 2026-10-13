@@ -56,7 +56,7 @@
                         <button type="button" class="btn btn-xs btn-outline-dark" onclick="fillCreds('admin@shopsphere.com', 'admin123')">
                             Admin Login
                         </button>
-                        <button type="button" class="btn btn-xs btn-outline-primary" onclick="fillCreds('ayush@shopsphere.com', 'user123')">
+                        <button type="button" class="btn btn-xs btn-outline-primary" onclick="fillCreds('customer1@shopsphere.com', 'user123')">
                             Customer Login
                         </button>
                     </div>
