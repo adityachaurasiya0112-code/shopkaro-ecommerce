@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.shopsphere</groupId>
+    <artifactId>shopsphere</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>ShopSphere - RTU Advanced Java E-Commerce Project</name>
+
+    <properties>
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <mysql.version>8.4.0</mysql.version>
+        <jakarta.servlet.version>6.1.0</jakarta.servlet.version>
+        <jstl.api.version>3.0.0</jstl.api.version>
+        <jstl.impl.version>3.0.1</jstl.impl.version>
+    </properties>
+
+    <modules>
+        <module>web</module>
+        <module>swing-admin</module>
+        <module>network</module>
+        <module>rmi</module>
+    </modules>
+</project>
